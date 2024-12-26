@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CNC.Controls.Probing</RootNamespace>
     <AssemblyName>CNC.Controls.Probing</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,16 +36,19 @@
     <UICulture>en-US</UICulture>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HelixToolkit.Wpf">
-      <HintPath>..\..\helix-toolkit\HelixToolkit.Wpf.dll</HintPath>
+    <Reference Include="HelixToolkit, Version=2.10.0.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>..\..\ioSender XL\packages\HelixToolkit.2.10.0\lib\netstandard1.1\HelixToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit.Wpf, Version=2.10.0.0, Culture=neutral, PublicKeyToken=52aa3500039caf0d, processorArchitecture=MSIL">
+      <HintPath>..\..\ioSender XL\packages\HelixToolkit.Wpf.2.10.0\lib\net45\HelixToolkit.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="RP.Math">
-      <HintPath>..\..\Vector-master\RP.Math.Vector3\bin\Release\RP.Math.dll</HintPath>
+      <HintPath>..\..\..\ioSender_dependencies\Vector\RP.Math.Vector3\bin\Release\RP.Math.dll</HintPath>
     </Reference>
     <Reference Include="RP.Math.Vector3">
-      <HintPath>..\..\Vector-master\RP.Math.Vector3\bin\Release\RP.Math.Vector3.dll</HintPath>
+      <HintPath>..\..\..\ioSender_dependencies\Vector\RP.Math.Vector3\bin\Release\RP.Math.Vector3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
